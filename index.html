@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhimavarm Kurrolla Thailand Trip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            color: #2d3436;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #2c3e50, #e74c3c);
+            color: white;
+            margin-bottom: 50px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .day-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            font-size: 1.8em;
+        }
+
+        .timeline {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .time-item {
+            margin-bottom: 25px;
+            padding-left: 35px;
+            border-left: 3px solid #3498db;
+            position: relative;
+        }
+
+        .time-item::before {
+            content: '✓';
+            position: absolute;
+            left: -18px;
+            top: 2px;
+            width: 30px;
+            height: 30px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .highlight {
+            color: #2c3e50;
+            font-weight: 700;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .flight-details {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .hotel-chip {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 60px;
+            font-size: 0.95em;
+        }
+
+        .pdf-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 5px 15px rgba(231,76,60,0.3);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .pdf-button:hover {
+            transform: translateY(-2px);
+            background: #c0392b;
+        }
+
+        .adult-activity {
+            color: #e74c3c;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .adult-activity::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+        }
+
+        @media print {
+            .header { clip-path: none; }
+            body { font-size: 12pt; }
+            .pdf-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <button class="pdf-button" onclick="window.print()">Save as PDF</button>
+
+    <div class="header">
+        <h1>Bhimavarm Kurrolla</h1>
+        <p>Thailand Trip Itinerary | May 28 - June 2, 2025</p>
+    </div>
+
+    <div class="container">
+        <div class="flight-details">
+            <h3>✈️ Flight Schedule</h3>
+            <div class="time-item">
+                <span class="highlight">Departure:</span> 
+                IndiGo 6E1061 | 28 May 2025<br>
+                03:50 Chennai (MAA) → 09:05 Bangkok (BKK)
+            </div>
+            <div class="time-item">
+                <span class="highlight">Return:</span> 
+                IndiGo 6E1062 | 02 Jun 2025<br>
+                10:05 Bangkok (BKK) → 11:50 Chennai (MAA)
+            </div>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="day-section">
+            <h2>28 May: Chennai → Bangkok → Pattaya</h2>
+            <div class="hotel-chip">🏨 Glow Pattaya</div>
+            <div class="timeline">
+                <div class="time-item">
+                    <span class="highlight">03:50:</span> Depart Chennai
+                </div>
+                <div class="time-item">
+                    <span class="highlight">09:05:</span> Arrive Bangkok
+                </div>
+                <div class="time-item">
+                    <span class="highlight">10:30:</span> Transfer to Pattaya
+                </div>
+                <div class="time-item">
+                    <span class="highlight">13:00:</span> Check-in & Lunch
+                </div>
+                <div class="time-item">
+                    <span class="highlight">15:00:</span> Sanctuary of Truth
+                </div>
+                <div class="time-item">
+                    <span class="highlight">18:00:</span> Tiffany's Cabaret Show
+                </div>
+                <div class="time-item">
+                    <span class="highlight">20:00:</span> Dinner @ The Glass House
+                </div>
+                <div class="time-item">
+                    <span class="highlight">22:30:</span> 
+                    <span class="adult-activity">Russian Cabaret Show @ Pent Hotel</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-section">
+            <h2>29 May: Pattaya Exploration</h2>
+            <div class="hotel-chip">🏨 Glow Pattaya</div>
+            <div class="timeline">
+                <div class="time-item">
+                    <span class="highlight">08:00:</span> Breakfast
+                </div>
+                <div class="time-item">
+                    <span class="highlight">09:30:</span> Coral Island Snorkeling
+                </div>
+                <div class="time-item">
+                    <span class="highlight">12:30:</span> Seafood Lunch @ Koh Larn
+                </div>
+                <div class="time-item">
+                    <span class="highlight">15:00:</span> 
+                    <span class="adult-activity">Nuru Massage @ Honey 2 Spa</span>
+                </div>
+                <div class="time-item">
+                    <span class="highlight">18:00:</span> Pattaya Viewpoint
+                </div>
+                <div class="time-item">
+                    <span class="highlight">20:00:</span> Walking Street
+                </div>
+                <div class="time-item">
+                    <span class="highlight">22:00:</span> 
+                    <span class="adult-activity">Nightlife @ Sapphire Club</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-section">
+            <h2>30 May: Pattaya Adventures</h2>
+            <div class="hotel-chip">🏨 Glow Pattaya</div>
+            <div class="timeline">
+                <div class="time-item">
+                    <span class="highlight">08:00:</span> Breakfast
+                </div>
+                <div class="time-item">
+                    <span class="highlight">09:00:</span> Nong Nooch Garden
+                </div>
+                <div class="time-item">
+                    <span class="highlight">12:00:</span> Elephant Village
+                </div>
+                <div class="time-item">
+                    <span class="highlight">15:00:</span> 
+                    <span class="adult-activity">Aroma Massage @ Bodytune</span>
+                </div>
+                <div class="time-item">
+                    <span class="highlight">18:00:</span> Sunset Cruise
+                </div>
+                <div class="time-item">
+                    <span class="highlight">21:00:</span> 
+                    <span class="adult-activity">Russian Show @ Xzyte Disco</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-section">
+            <h2>31 May: Pattaya → Bangkok</h2>
+            <div class="hotel-chip">🏨 Ambassador Hotel</div>
+            <div class="timeline">
+                <div class="time-item">
+                    <span class="highlight">08:00:</span> Breakfast & Check-out
+                </div>
+                <div class="time-item">
+                    <span class="highlight">10:00:</span> Transfer to Bangkok
+                </div>
+                <div class="time-item">
+                    <span class="highlight">13:00:</span> Hotel Check-in
+                </div>
+                <div class="time-item">
+                    <span class="highlight">15:00:</span> Safari World (Tiger Safari)
+                </div>
+                <div class="time-item">
+                    <span class="highlight">19:00:</span> Rooftop Dinner @ Vertigo
+                </div>
+                <div class="time-item">
+                    <span class="highlight">22:00:</span> 
+                    <span class="adult-activity">Soi Cowboy Nightlife</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-section">
+            <h2>01 June: Bangkok Highlights</h2>
+            <div class="hotel-chip">🏨 Ambassador Hotel</div>
+            <div class="timeline">
+                <div class="time-item">
+                    <span class="highlight">07:00:</span> Floating Market
+                </div>
+                <div class="time-item">
+                    <span class="highlight">10:00:</span> Grand Palace & Wat Pho
+                </div>
+                <div class="time-item">
+                    <span class="highlight">13:00:</span> Michelin Star Lunch
+                </div>
+                <div class="time-item">
+                    <span class="highlight">15:00:</span> Chatuchak Market
+                </div>
+                <div class="time-item">
+                    <span class="highlight">18:00:</span> 
+                    <span class="adult-activity">Traditional Thai Massage</span>
+                </div>
+                <div class="time-item">
+                    <span class="highlight">21:00:</span> 
+                    <span class="adult-activity">Nana Plaza Nightlife</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departure -->
+        <div class="flight-details">
+            <h3>🚖 Return Details</h3>
+            <div class="time-item">
+                <span class="highlight">02 June:</span> 
+                07:00 Hotel Check-out<br>
+                08:00 Depart for Airport<br>
+                10:05 Flight to Chennai
+            </div>
+        </div>
+
+        <div class="notes-box">
+            <h3>🔞 Adult Activities Guide</h3>
+            <ul>
+                <li>Russian Shows: ฿800-1500 with drink</li>
+                <li>Premium Massages: ฿1200-2500/hour</li>
+                <li>Nightclubs: Strictly 20+ age limit</li>
+                <li>Dress Code: Smart casual enforced</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Emergency Contacts: Tourist Police 1155 | Glow Pattaya +66 38 259 999</p>
+        <p style="margin-top: 15px;">⚠️ Carry Passport Copy for Age Verification</p>
+    </footer>
+</body>
+</html>
